@@ -24,7 +24,7 @@ const HooksComponent = ({ data, error, loading }) => {
 
   return (
     <>
-      <h1 className='text-center py-5 fw-bold'>Hooks App</h1>
+      <h1 className='text-center py-5 fw-bold'>Posts App</h1>
       <button className='btn btn-primary mx-2 rounded-0'>
         <Link to='search' className='text-light text-decoration-none'>
           Search
