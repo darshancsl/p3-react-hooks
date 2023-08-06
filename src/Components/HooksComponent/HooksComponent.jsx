@@ -25,7 +25,7 @@ const HooksComponent = ({ data, error, loading }) => {
   return (
     <>
       <h1 className='text-center py-5 fw-bold'>Posts App</h1>
-      <button className='btn btn-primary mx-2 rounded-0'>
+      <button className='btn btn-primary rounded-0 m-3'>
         <Link to='search' className='text-light text-decoration-none'>
           Search
         </Link>
@@ -34,7 +34,7 @@ const HooksComponent = ({ data, error, loading }) => {
         <Outlet />
         <div className='pagination mb-3'>
           <button
-            className='btn btn-primary mx-2 rounded-0'
+            className='btn btn-primary mx-1 rounded-0 fs-6'
             onClick={handlePrevPage}
             disabled={currentPage === 1}
           >
@@ -42,7 +42,7 @@ const HooksComponent = ({ data, error, loading }) => {
           </button>
           {getPaginationArray().map((page) => (
             <button
-              className='btn btn-primary mx-2 rounded-0'
+              className='btn btn-primary mx-1 rounded-0 fs-6'
               key={page}
               onClick={() => goToPage(page)}
               disabled={currentPage === page}
@@ -52,7 +52,7 @@ const HooksComponent = ({ data, error, loading }) => {
             </button>
           ))}
           <button
-            className='btn btn-primary mx-2 rounded-0'
+            className='btn btn-primary mx-1 rounded-0 fs-6'
             onClick={handleNextPage}
             disabled={currentPage === totalPages}
           >

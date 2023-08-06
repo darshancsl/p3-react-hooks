@@ -1,6 +1,6 @@
 export const hooksNav = [
   {
-    name: 'HooksApp',
+    name: 'Posts App',
     path: '/hooks',
     desc: 'A simple custom hooks app made using useFetch, usePagination, useDebounce'
   }
