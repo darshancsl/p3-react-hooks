@@ -14,7 +14,7 @@ const Header = () => {
           <Nav className='me-auto'>
             {hooksNav?.map(({ name, path }) => {
               return (
-                <Nav.Link as={Link} key={name} href={path}>
+                <Nav.Link as={Link} key={name} to={path}>
                   {name}
                 </Nav.Link>
               );
